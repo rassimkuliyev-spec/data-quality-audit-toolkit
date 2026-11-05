@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "rows": 6,
+    "columns": 4,
+    "exact_duplicate_rows": 1,
+    "duplicate_key_rows": 1,
+    "key_columns": [
+      "order_id"
+    ]
+  },
+  "column_checks": [
+    {
+      "name": "order_id",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique_non_null": 5,
+      "leading_trailing_whitespace_rows": 0,
+      "mixed_numeric_and_text": false,
+      "possible_case_inconsistency": false,
+      "numeric_outliers_iqr": null
+    },
+    {
+      "name": "category",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique_non_null": 4,
+      "leading_trailing_whitespace_rows": 1,
+      "mixed_numeric_and_text": false,
+      "possible_case_inconsistency": true,
+      "numeric_outliers_iqr": null
+    },
+    {
+      "name": "revenue",
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "unique_non_null": 5,
+      "leading_trailing_whitespace_rows": 0,
+      "mixed_numeric_and_text": false,
+      "possible_case_inconsistency": false,
+      "numeric_outliers_iqr": 1
+    },
+    {
+      "name": "region",
+      "missing_count": 2,
+      "missing_pct": 33.33,
+      "unique_non_null": 3,
+      "leading_trailing_whitespace_rows": 0,
+      "mixed_numeric_and_text": false,
+      "possible_case_inconsistency": false,
+      "numeric_outliers_iqr": null
+    }
+  ],
+  "limitations": [
+    "A data-quality flag does not prove an error.",
+    "IQR outliers require domain review and can reflect valid rare events.",
+    "Business rules and cross-table integrity are not checked.",
+    "Case inconsistencies are heuristic signals, not confirmed duplicates."
+  ],
+  "generated_utc": "2026-11-05T19:34:03.817514+00:00"
+}
